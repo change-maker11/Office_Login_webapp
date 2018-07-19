@@ -1,0 +1,129 @@
+
+body
+{
+    background-color:#ffa735;
+     align-items: center;
+}
+u,#response404
+{
+    color:#0a0444;
+   font-size: 30px;
+   font-weight: bold;
+
+}
+
+h1{
+    background-color: #022968;
+    color:#ffffff;
+    font-family: 'Times New Roman';
+    font-size:20px;
+    padding:10px;
+    letter-spacing: 5px;
+    margin: -10px -10px 10px -10px;
+    width:100%;
+    text-align: center;
+    
+}
+input{
+    padding :10px;
+    border-radius: 10px;
+    font-size:20px;
+    border:3px solid #ff9000;
+   width: 22%;
+   
+
+
+}
+button
+{
+    padding:5px 10px 5px 10px;
+    font-size:20px;
+    margin-left: 2%;
+    background-color: #43a334;
+    color:#ffffff;
+    font-weight: bold;
+    border: none;
+   
+    border-radius: 3px;
+}
+#checkbox-text{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+
+}
+p
+{
+    color:#0a0444;
+    font-size: 20px;
+
+}
+*{
+    font-family: 'Helvetica';
+}
+#checkbox{
+    width:20px;
+}
+img{
+    float:left;
+}
+#details{
+    text-align: center;
+}
+legend{
+    color:#0a0444;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+#homepage-button{
+    margin-left:45%;
+    
+}
+#email-form
+{
+    margin-left:10%;
+}
+#warn{
+    color:#0a0444;
+}
+
+/* media queries*/
+@media screen and ( max-width : 800px)
+{
+    input{
+        width:46%;
+    }
+    #date-input
+    {
+        width:29%;
+    }
+    #email
+    {
+        width:97%;
+    }
+    #pass{
+        width:97%;
+        margin-top:10px;
+    }
+
+    button{
+        margin-top:5px;
+    }
+    img{
+        width:99%;
+        margin-bottom: 10px;
+    }
+    hr{
+        margin-top:-50px;
+    }
+    #homepage-button{
+        margin-top:-40px;
+        margin-left:25%;
+    }
+    #welcome
+    {
+        text-align: center;
+    }
+}

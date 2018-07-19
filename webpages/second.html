@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+    *{float:left;}
+    img{position:relative;
+    	left:-150px;
+    	height: 200px;
+    	width:200px;
+    	transition: all 2s ease;
+    	z-index:-1;}
+    .text1{position:absolute;
+    	color:white;
+top:0px;
+    }
+    image::hover{
+    	height:500px;
+    	width:500px;
+    }
+    span{
+    	background-color: blue;
+    	color:white;
+    	height:30px;
+    	width:60px;
+    	margin:auto;
+    	padding:10px;
+    	border-radius: 13px;
+    	transition: all 2s;
+    }
+    span:hover{background-color: red;
+    	color:black;}
+</style>
+<meta name="viewport" content="width=device-width , initial-scale=1.0 ">
+<title>you just revived</title>
+<link rel="icon" href="home.png" type="image/png">                                     
+</head>
+<body>
+	<a href="www.facebook.com"><span id="span">journey</span></a>
+	<button type="button" id="alert1">alert</button>
+	<p id="alert5"></p>
+	<p id="puneet"></p>
+	<button type="button" id="but" onclick="display()">click me</button>
+	<div>
+		<p id="text1">you will live forever</p>
+	<img id="image" src=" hello.jpg" >
+   </div>
+<script>
+	{
+     var count=0;
+     		var first="hello.jpg";
+		var second="image.jpg";
+//document.getElementById("but").onclick=
+	//function display ()
+	 var interval=window.setInterval(images1,2000);
+document.getElementById("image").addEventListener("click",stope);
+     // document.getElementById("image").addEventListener(mouseout,function(){x=window.setInterval(images1,2000);});
+	function images1()
+	{
+		count++;
+		if(count%2==0)
+       {
+        document.getElementById("image").src="hello.jpg";
+        document.getElementById("text1").innerHTML="you have achieved it";
+       }
+        else
+       { document.getElementById("image").src="image.jpg";
+        document.getElementById("text1").innerHTML="u will what you want";
+        document.getElementById("text1").style.color="white";
+      }
+document.getElementById("image").addEventListener("click",stope);
+    
+	}
+
+function stope()
+{
+	window.clearInterval(interval);
+}
+}
+var p;
+document.getElementById("alert1").addEventListener("click", function()
+{
+ p=window.confirm("Hello World!"); 
+document.getElementById("alert5").innerHTML=p;
+});
+</script>
+</body>
+</html>

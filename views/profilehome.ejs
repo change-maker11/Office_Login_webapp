@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>PROFILE PAGE</title>
+        <link href="mystyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+           <h1>Lappy Corp. Pvt. Ltd.</h1>
+        <img src="uploads/<%=info.img %>" height="200px" width="200px">
+        <h2 id="details"><strong>Name:</strong> <%= info.firstname%>  &nbsp;&nbsp;&nbsp;&nbsp;<%=info.surname%><br><br>
+          <strong>DOB :</strong><%= info.date %>/<%= info.month %>/<%= info.year %><br><br>
+          <strong>Designation :</strong>Employee </h2><br>
+      <br><br><br><hr>
+      <u>Send Email To Client</u>
+      <br><br>
+        <form method='POST' action="/send" enctype="multipart/form-data" id="email-form">
+            <tr>
+                    <td><input type="email" name="reciever" placeholder="reciever email" required id="email-pass"></td>
+                <td><input type="textarea" name="text" placeholder="text" height="30px" id="email-pass"></td>
+             <td><input type="file" name='file'></td>
+            <td><button type='submit'>send mail</button></td></tr>
+            <br>
+            <h2><%= sendsucess %></h2>
+        </form><br><br><br><br>
+       <p> <form action="/" ><button type="submit" id="homepage-button" >go to home page</button>
+        </form></p>
+    </body>
+</html>

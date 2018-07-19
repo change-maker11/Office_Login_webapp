@@ -1,0 +1,33 @@
+<head>
+        <meta name="viewport" content="width=300px,initial-scale=1.0">
+        <link href="mystyle.css" rel="stylesheet" type="text/css">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Lappy Corp. Pvt. Ltd.</h1>
+    <form id="login" action="/login" method="POST">
+        
+        <u>Login existing account</u><br><br>
+        <input type="email" placeholder="Enter Email" name="email" required id="email" >
+        <input type="password" placeholder="password" name='pass' required id="pass">
+        <button type="submit" value="Login">Login</button>
+       <p id="warn"> <%= data %></p>
+    </form>
+    <form method="POST" id="new" action="/new" enctype="multipart/form-data">
+      <p id="welcome"><u>Create new Account</u></p>
+        <p id="welcome">Welcome to lappycorp Family..</p>
+        <input type="text" placeholder="Firstname" name='firstname' value="<%=values.firstname %>" required>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="Surname" name='surname' value="<%=values.surname %>"><br><br>
+        <input type="number" placeholder="Date" name='date' value="<%=values.date %>"required min=1 max=31 id="date-input">&nbsp;&nbsp;&nbsp;
+        <input type="number" placeholder="Month" name='month' value="<%=values.month %>"required min=1 max=12 id="date-input">&nbsp;&nbsp;&nbsp;
+        <input type="number" placeholder="Year" name='year' value="<%=values.year %>" required min=1920 max=2020 id="date-input"><br><br>
+        <input type="email" placeholder="new email" name="newemail" required id="email">&nbsp;&nbsp;&nbsp;<span id="warn"><%= check%></span>
+        <input type="password" placeholder="password" name="pass" required id="pass"><br><br>
+       <div id="checkbox-text"> <input type="radio" value="M" name="gender" checked id="checkbox">Male<br>
+        <input type="radio" value="F" name="gender" id="checkbox">female<br><br>
+        Add profile pic here:&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="file" name="pic" id="email"></div><br>
+        <button type="submit" value="create">New account</button>
+    </form><br>
+    <h2><%= sucess%></h2>
+</body>
