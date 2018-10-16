@@ -1,1 +1,2 @@
 # login-app
+This App enables Office employee to create his personal account on the office website allowing him to upload pictures to server using multer framework in node.js. Afterwards the data is stored in mysql database and can later be retrieved for verification. After logging in the user can send emails through company"s email adress using nodemailer and also attach the files he want to send to client.
